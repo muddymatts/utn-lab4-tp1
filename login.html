@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/funciones.js"></script>
+    <script src="funciones.js"></script>
+    <style>
+        @import "estilos.css";
+    </style>
     
 </head>
 <body>
 <div >
-    <form id="loginForm" name="loginForm" autocomplete="off" style="margin: auto; width: 220px; margin-top: 5%;">
-        <label style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: gray;">Usuario</label>
+    <form class="formulario" id="loginForm" name="loginForm" autocomplete="off" onsubmit="ingresar()">
+        <label class="titulo">Usuario</label>
     </p>
         <input type="text" name="user" id="user" placeholder="Usuario" required>
     </p>
-        <label style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: gray;">Contraseña</label>
+        <label class="titulo">Contraseña</label>
     </p>
         <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
     </p>
         <button>Ingresar</button>
     </form>
-
 </div>
 
 </body>
