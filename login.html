@@ -13,7 +13,7 @@
 </head>
 <body>
 <div >
-    <form class="formulario" id="loginForm" name="loginForm" autocomplete="off" onsubmit="ingresar()">
+    <form class="formulario" id="loginForm" name="loginForm" autocomplete="off" onsubmit="ingresar(event)">
         <label class="titulo">Usuario</label>
     </p>
         <input type="text" name="user" id="user" placeholder="Usuario" required>
@@ -22,7 +22,7 @@
     </p>
         <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
     </p>
-        <button>Ingresar</button>
+        <button id="btnIngresar">Ingresar</button>
     </form>
 
 </div>

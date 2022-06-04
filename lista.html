@@ -5,8 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/funciones.js"></script>
 </head>
-<body>
+<style>
+    @import "/estilos.css";
+</style>
+
+
+<body onload="cargaDatos()">
+
+    <form class="formulario"  onsubmit="listarBusqueda(event)">
+        <label for="apellidoBusqueda" class="titulo">Busqueda por usuario</label> 
+        <input id="usuarioBusqueda" type="text">
+        <input type="button" value="Buscar" onclick="listarBusqueda(event)">
+    </form>
     
+    
+    <div style="margin-top: 2% ;" id="tabla"></div>
 </body>
 </html>
